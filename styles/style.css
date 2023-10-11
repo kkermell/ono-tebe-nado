@@ -1,1 +1,49 @@
-/* место для вашего кода */
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* Шапка */
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 109px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 92px 50px;
+  grid-template-areas: 
+  "menu logo address";
+}
+
+.header__menu {
+  grid-area: menu;
+  justify-self: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+}
+
+.header__links-list-item__no-bullit {
+  list-style-type: none;
+}
+
+.header__link-active {
+  text-decoration: none;
+}
+
+.header__logo {
+  grid-area: logo;
+  justify-self: center;
+  width: 148px;
+}
+
+.address {
+  grid-area: address;
+  justify-self: end;
+}
