@@ -3,11 +3,9 @@ body {
   width: 1440px;
   font-weight: normal;
   font-size: 18px;
-  height: 5000px;
 }
 
 /* Шапка */
-/* TODO: Доделать выравнивание */
 
 .header {
   padding: 92px 50px;
@@ -29,11 +27,15 @@ body {
   display: flex;
   gap: 32px;
   list-style-type: circle;
-  text-underline-offset: 5px;
 }
 
 .header__links-list-item__no-bullit {
   list-style-type: none;
+}
+
+.header__link {
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
 }
 
 .header__link-active {
@@ -48,13 +50,16 @@ body {
 .address {
   font-style: normal;
   line-height: 135%;
+}
+
+.address a {
+  text-decoration: underline 1px;
   text-underline-offset: 5px;
 }
 
 .header__address {
   grid-area: address;
   justify-self: end;
-  /* align-self: center; */
 }
 
 /* Картинка */
@@ -162,7 +167,7 @@ body {
   list-style-type: none;
 }
 
-.lots__card-list-item {
+.lots__card-list-item .overlay {
   padding: 50px 40px;
 }
 
@@ -182,7 +187,8 @@ body {
 .card__title {
   text-transform: uppercase;
   font-size: 22px;
-  text-decoration: underline;
+  text-decoration: underline 1px;
+  text-underline-offset: 3px;
   line-height: 120%;
   font-weight: 700;
 }
@@ -194,18 +200,35 @@ body {
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
+  grid-area: film;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
+  grid-area: book;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
+  grid-area: picture;
 }
 
 .card_type_film, .card_type_book, .card_type_picture {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+
+/* Об аукционе */
+
+.about {
+  padding: 0 50px 180px;
 }
