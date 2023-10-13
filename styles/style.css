@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   font-weight: normal;
   font-size: 18px;
 }
@@ -121,6 +125,7 @@ body {
 }
 
 /* Картинка - Текст и кнопка */
+/* Задний фон не через position и z-index  */
 
 .cover__description {
   text-transform: uppercase;
@@ -169,7 +174,7 @@ body {
 
 .lots__card-list-item .overlay {
   padding: 50px 40px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -269,6 +274,8 @@ body {
   flex-direction: column;
   gap: 25px;
   font-size: 20px;
+  font-weight: normal;
+  font-family: Raleway;
 }
 
 /* Подвал */
@@ -296,9 +303,9 @@ body {
 .footer__social-list {
   list-style-type: none;
   display: flex;
-  gap: 45px;
+  gap: 47px;
 }
 
 .footer__social-icon {
-  width: 50px;
+  width: 49px;
 }
