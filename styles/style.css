@@ -69,6 +69,7 @@ body {
 /* Интро */
 
 .cover {
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   color: #fff;
   background-position: center;
@@ -90,10 +91,6 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, .6);
-}
-
-.cover {
-  padding: 165px 50px 50px;
 }
 
 /* Интро - Заголовок */
